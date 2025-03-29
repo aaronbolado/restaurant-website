@@ -113,6 +113,96 @@ section {
     color: #c9dece;
 }
 
+/* MENU SECTION */
+.menu-header {
+    position: relative;
+    background-image: url(silya_assets/menu/menu-bg-img-header.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: calc(100vh - 700px);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+.menu-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4);
+    z-index: 1;
+}
+
+.menu-header * {
+    position: relative;
+    z-index: 2;
+}
+
+.custom-divider hr {
+    border: none; 
+    border-top: 7px solid var(--secondary-color) !important; 
+    width: 100%; 
+    opacity: 1; 
+}
+
+.custom-divider span {
+    color: var(--slightdark-color) !important;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.menu-section h5, i{
+    color: var(--secondary-color);
+}
+
+.collapse .food-name {
+    color: var(--secondary-color);
+
+}
+
+.menu-section .category{
+    transition: transform 0.3s ease;
+}
+
+.menu-section .category:hover{
+    transform: scale(1.01);
+}
+
+.menu-section .close-collapse {
+    background-color: var(--primary-color);
+    transition: all 0.3s;   
+}
+
+.menu-section .close-collapse h5, 
+.menu-section .close-collapse i {
+    color: var(--light-color);
+}
+
+.menu-section .close-collapse:hover {
+    background-color: var(--light-color);
+}
+
+.menu-section .close-collapse:hover h5, 
+.menu-section .close-collapse:hover i {
+    color: var(--primary-color);
+}
+
+.drink {
+    transition: transform 0.3s ease;
+}
+
+.drink:hover {
+    transform: scale(1.01);
+}
+
+
 /*GALLERY SECTION*/
 
 /*FOOD GALLERY SECTION*/
@@ -165,6 +255,8 @@ section {
   .ambiance-carousel-image:hover {
     transform: scale(1.01);
   }
+  
+
   
 
   /*EVENTS SECTION*/ 
